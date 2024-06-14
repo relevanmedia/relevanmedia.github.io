@@ -197,6 +197,7 @@ button:hover {
 
     .input__box{
         background: var(--color-light)
+    }
 
     small {
         background: var(--color-dark);
