@@ -195,6 +195,9 @@ button:hover {
         gap: 1.25rem;
     }
 
+    .input__box{
+        background: var(--color-light)
+
     small {
         background: var(--color-dark);
         padding: 0 1rem;
@@ -223,7 +226,7 @@ button:hover {
         justify-content: center;
         gap: 0.6rem;
         padding: 0 0.8rem;
-        background: var(--color-gray-1);
+        background: var(--color-light);
         border-color: var(--color-gray-2);
         position: relative;
     }
