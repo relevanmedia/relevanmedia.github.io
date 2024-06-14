@@ -1,0 +1,256 @@
+.auth__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.auth__box {
+    width: 28rem;
+    height: fit-content;
+    background: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px 0 var(--color-shadow-light);
+}
+
+.dark .auth__box {
+    box-shadow: none;
+}
+
+.auth__top .back__btn {
+    display: none;
+}
+
+.auth__form,
+form,
+.auth__option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input__box {
+    width: 100%;
+    height: 3.2rem;
+    background: var(--color-gray-1);
+    border: 1px solid var(--color-gray-2);
+    border-radius: 0.6rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.input__box:focus-within {
+    border-color: var(--color-main);
+}
+
+.input__box img {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: var(--icon-gray-3);
+}
+
+.input__box input {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.input__box input::placeholder {
+    color: var(--color-gray-3);
+    font-size: 1rem;
+}
+
+.input__box .show__pass img {
+    cursor: pointer;
+}
+
+form>span {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+form>span a:hover {
+    color: var(--color-main);
+}
+
+button {
+    width: 100%;
+    height: 3.2rem;
+    background: var(--color-main-gradient);
+    color: var(--color-gray-static-5);
+    border-radius: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--color-main);
+}
+
+.auth__option {
+    flex-direction: row;
+    position: relative;
+}
+
+.auth__option hr {
+    display: none;
+}
+
+.auth__option a {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--color-gray-4);
+    border-radius: 50%;
+    padding: 0.6rem;
+    transition: 0.3s;
+}
+
+.auth__option a img {
+    filter: var(--icon-gray-4);
+    transition: 0.3s;
+}
+
+.auth__option a span {
+    display: none;
+}
+
+.auth__option a:hover {
+    border-color: var(--color-main);
+    background: var(--color-main);
+}
+
+.auth__option a:hover img {
+    filter: var(--icon-gray-static-5);
+}
+
+.auth__box>span a:hover {
+    color: var(--color-main);
+}
+
+/* ========== Media Query for Mobile Phones ========== */
+@media screen and (max-width:600px) {
+    html {
+        font-size: 15px;
+    }
+
+    .auth__box {
+        width: 100%;
+        height: 100%;
+        background: none;
+        box-shadow: none;
+        justify-content: start;
+        padding: 1rem 1.25rem;
+    }
+
+    .auth__top .back__btn {
+        display: inline-block;
+    }
+
+    .auth__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .auth__top .back__btn {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .auth__top .back__btn a img {
+        width: 1.7rem;
+        height: 1.7rem;
+        filter: var(--icon-gray-4);
+        cursor: pointer;
+    }
+
+    .auth__top h1 {
+        font-size: 1.4rem;
+    }
+
+    .auth__form {
+        margin-top: 3rem;
+    }
+
+    .auth__form,
+    form {
+        gap: 1.25rem;
+    }
+
+    small {
+        background: var(--color-dark);
+        padding: 0 1rem;
+    }
+
+    .auth__option {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .auth__option hr {
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid var(--color-gray-2);
+        position: absolute;
+        left: 0;
+        top: -2rem;
+        z-index: -1;
+    }
+
+    .auth__option a {
+        width: 100%;
+        border-radius: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0 0.8rem;
+        background: var(--color-gray-1);
+        border-color: var(--color-gray-2);
+        position: relative;
+    }
+
+    .auth__option a img {
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: var(--icon-gray-3);
+    }
+
+    .auth__option a span {
+        display: inline-block;
+        color: var(--color-gray-3);
+    }
+
+    .auth__option a:hover {
+        background: var(--color-gray-1);
+        border-color: var(--color-main);
+    }
+
+    .auth__box>span {
+        margin-top: 3rem;
+    }
+
+    .input__box,
+    button,
+    .auth__option a {
+        height: 3.6rem;
+    }
+}
