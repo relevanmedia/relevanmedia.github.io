@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --color-light: #f5faff;
+    --color-light: #f3f2f2;
     --color-dark: #fcfcfc;
 
     --color-gray-1: #E8EBEE;
@@ -10,7 +10,7 @@
     --color-gray-4: #3C414C;
     --color-gray-5: #282B32;
 
-    --color-main: #98D09F;
+    --color-main: #C4DC6C;
     --color-main-gradient: linear-gradient(45deg, #98D09F, #DAE693);
 
     --color-primary: #97b3d8;
